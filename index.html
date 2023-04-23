@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="text/javascript" src="js/jquery3.3.1.js"></script>
+  <script type="text/javascript" src="js/lightslider.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deepBlue: '#4F35EF',
+            whiteBlue: '#d8d6e6',
+            gray : 'hsl(0, 4%, 21%)',
+            dBlue : 'rgba(1, 1, 68, 0.911)',
+            lBlack: 'rgba(0, 0, 30, 0.76)',
+            hBlue : '#645b9',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .fade-in {
+      opacity: 0;
+    }
+    /* Add a transition for the opacity property */
+    .transition-opacity {
+      transition-property: opacity;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+    }
+    /* Set the final opacity of the text to 1 */
+    .fade-in.transition-opacity {
+      opacity: 1;
+    }
+  </style>
+
+  <title>Envato creative portfolio</title>
+</head>
+<body class="overflow-x-hidden">
+  <section class="relative w-screen text-white h-screen overflow-hidden mb-100 font-poppins">
+    <div class="w-full h-screen bg-center bg-cover bg-blend-darken"style="background-image: url('/images/girl.svg'); background-color: rgba(0, 0, 30, 0.76);">
+      <header>
+        <nav class="flex justify-between px-16 pr-10% items-center min-h-8vh font-sans-serif bg-dBlue bg-opacity-90 bg-lighten w-screen">
+          <div class="whiteBlue uppercase tracking-wider py-3 font-bold" >
+            <h4 class="text-3xl text-deepBlue">DITA</h4>
+          </div>
+          <ul class="flex justify-around w-1/2 list-none text-whiteBlue tracking-wider font-bold text-sm px-20">
+            <li><a href="#home" class="hover:text-gray px-2">Home</a></li>
+            <li><a href="#about"  class="hover:text-gray px-2">About</a></li>
+            <li><a href="#services" class="hover:text-gray px-2">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-gray px-2">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-gray px-2">Contact Me</a></li>
+        </ul>
+        </nav>
+
+        <div class="h-screen p-2 flex items-center justify-center">
+          <div class="mb-auto">
+              <h1 class="mt-60 ml-20 items-center font-bold text-5xl text-whiteBlue transition-opacity">Hello! I am <span class="text-deepBlue">Arial DITA</span></h1>
+              <p class="text-whiteBlue font-medium px-40 text-3xl transition-opacity" > I am a Fullstack Developer</p>
+          </div>
+        </div>2
+      </header>
+      <div class="h-screen p-2 flex items-center justify-center">
+    </div>
+  </section>
+
+  <section id="about">
+    <section>
+      <main>
+        <div class=" grid grid-cols-2 items-center px-6 mx-auto mt-20 space-y-0 md:space-y-0 md:flex-row">
+          <div class="text-left pl-100px h-screen space-y-6">
+            <h3 class="pt-5 pl-5 text-justify text-3xl font-bold text-deepBlue">About Me</h3>
+            <p class="text-2xl text-gray px-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae ad sunt, itaque
+              doloribus mollitia praesentium magnam corporis impedit, nobis beatae fuga magni repellendus
+              cupiditate!</p>
+            <p class="text-2xl text-gray px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit accusamus aspernatur
+              omnis, laborum at eum quae perspiciatis! <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit accusamus aspernatur
+              omnis, laborum at eum quae perspiciatis! </p>
+            
+            <div class="px-6">
+              <button type="submit" title="Download Resume" class=" text-deepBlue opacity-85 rounded-lg px-20 py-8 shadow filter drop-shadow-lg w-35 cursor-pointer border-0 bg-center bg-cover" style="background-image: url(/images/Button.png);"></button>
+            </div>
+          </div>
+
+          <div class=" items-center justify-center w-full py-10 px-6">
+            <div class=" overflow-hidden">
+              <img src="/images/girl.svg" alt="Girl" class="w-90 rounded-full h-screen object-cover pb-10 px-6">
+            </div>
+          </div>
+        
+        </div>
+      </main>
+    </section>
+
+    <section id="about-mobile" class="md:hidden">
+      <main>
+          <div class="about-wrapper">
+              <div class="text">
+                  <h3 id="about-me">About Me</h3>
+                  <div class="about-wrapper-inner large">
+                      <div class="about-image"></div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestiae ad sunt, itaque
+                          doloribus mollitia praesentium magnam corporis impedit, nobis beatae fuga magni repellendus
+                          cupiditate!</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit accusamus aspernatur
+                          omnis, laborum at eum quae perspiciatis!
+                      </p>
+                      <!-- <a href="#" id="resue">Resume</a> -->
+                      <button type="submit" title="Download Resume" id="resume">
+                          <div class="download-resume"></div>
+                      </button>
+                  </div>
+
+              </div>
+      </main>
+  </section>
+  </section>
+
+  <section id="services" class="mb-100">
+    <section>
+      <main>
+        <div class="text-start">
+          <h3 class="m-0 pl-10  text-3xl font-bold text-deepBlue">Services</h3>
+          <p class="font-medium text-2xl mt-3 mb-2 text-gray pl-10">What I Can Do For You....</p>
+        </div>
+        <div class="container m-auto grid grid-cols-2 gap-4">
+          <div class=" mx-auto h-full bg-deepBlue justify-around rounded-lg p-16 transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-90 ">
+            <img src="images/tv_and_mobile.png" alt="monitor" class="h-16 mb-4 items-center ">
+            <div>
+              <h3 class="text-white font-bold py-2">WebApps and Websites</h3>
+              <p  class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+            </div>
+          </div>
+          <div class=" mx-auto h-full bg-deepBlue justify-around rounded-lg p-16 transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-90">
+            <img src="images/grid.png" alt="monitor" class="h-16 mb-4 items-center">
+            <div>
+              <h3 class="text-white font-bold py-2">Apps</h3>
+              <p  class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+            </div>
+          </div>
+          <div class=" mx-auto h-full bg-deepBlue justify-around rounded-lg p-16 transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-90">
+            <img src="images/vectors.png" alt="monitor" class="h-16 mb-4 items-center">
+            <div>
+              <h3 class="text-white font-bold py-2">Graphic Designs</h3>
+              <p  class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+            </div>
+          </div>
+          <div class=" mx-auto h-full bg-deepBlue justify-around rounded-lg p-16 transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-90">
+            <img src="images/vectors.png" alt="monitor" class="h-16 mb-4 items-center">
+            <div>
+              <h3 class="text-white font-bold py-2">Animations</h3>
+              <p  class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sapiente cum voluptatibus minus fuga. Iste itaque quisquam harum sequi ullam dolores exercitationem sunt consequatur ipsum.</p>
+            </div>
+          </div>
+        </div>
+        <!--SERVICES-WRAPPER END-->
+      </main>
+    </section>
+  </section>  
+  
+  <section id="portfolio">
+    <section class="mt-10 p-10 block">
+        <main>
+            <h3 class="pl-100 text-justify font-bold text-4xl text-deepBlue">Portfolio</h3>
+            <p class="font-medium text-2xl mt-3 text-gray pl-100">Some of my best works...</p>
+            <div class="container m-auto grid grid-cols-3 gap-8 py-4">
+
+                <div class="relative bg-[url('/images/graffiti.jpg')] bg-no-repeat bg-center bg-cover rounded-lg 
+                transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-110">
+                    <div class="mt-40 p-5 text-whiteBlue bg-gray-900 rounded-b-lg">
+                        <h1 class="font-bold">Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="relative bg-[url('/images/graffiti.jpg')] bg-no-repeat bg-center bg-cover rounded-lg
+                transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-110">
+                    <div class="mt-40 p-5 text-whiteBlue bg-gray-900 rounded-b-lg">
+                        <h1 class="font-bold">Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="relative bg-[url('/images/ds_algo.jpg')] bg-no-repeat bg-center bg-cover rounded-lg
+                transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-110">
+                    <div class="mt-40 p-5 text-whiteBlue bg-gray-900 rounded-b-lg">
+                        <h1 class="font-bold">Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="relative cols-span-2 col-start-1 col-end-3 bg-[url('/images/graffiti.jpg')] bg-no-repeat bg-center bg-cover rounded-lg
+                transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-110 ">
+                    <div class="mt-40 p-5 text-whiteBlue bg-gray-900 rounded-b-lg">
+                        <h1 class="font-bold">Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="relative bg-[url('/images/lrg-graffiti.jpg')] bg-no-repeat bg-center bg-cover rounded-lg 
+                transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-110">
+                    <div class="mt-40 p-5 text-whiteBlue bg-gray-900 rounded-b-lg">
+                        <h1 class="font-bold">Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="relative bg-[url('/images/graffiti.jpg')] bg-no-repeat bg-center bg-cover rounded-lg
+                transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-110">
+                    <div class="mt-40 p-5 text-whiteBlue bg-gray-900 rounded-b-lg">
+                        <h1 class="font-bold">Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+                <div class="relative cols-span-2 col-start-2 col-end-4 bg-[url('/images/graffiti.jpg')] bg-no-repeat bg-center bg-cover rounded-lg
+                transition duration-500 ease-in-out hover:transform hover:-translate-y-1 hover:scale-110">
+                    <div class="mt-40 p-5 text-whiteBlue bg-gray-900 rounded-b-lg">
+                        <h1 class="font-bold">Title</h1>
+                        <h3><span><a href="#">Website Link</a></span> </h3>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="bg-deepBlue w-screen">
+      <main>
+        <div class="grid grid-cols-5 m-auto items-center">
+          <div class="mx-auto h-full justify-around p-4">
+            <div class="justify-around px-10 pt-5">
+                <img src="images/people.png" alt="monitor" class="justify-center">
+            </div>
+            <div class="text-center py-3">
+                <h1 class="text-center text-white text-3xl font-bold">25</h1>
+                <p class="text-white font-medium">Satisfied</p>
+            </div>
+
+          </div>
+          <div class=" mx-auto h-full justify-around p-4">
+            <div class="justify-around px-10 pt-5">
+                <img src="images/box.png" alt="monitor">
+            </div>
+            <div class="text-center py-3">
+                <h1 class="text-center text-white text-3xl font-bold">4</h1>
+                <p class="text-white font-medium">Years of experience</p>
+            </div>
+
+          </div>
+          <div class="mx-auto h-full justify-around p-4">
+
+            <div class="justify-around px-10 pt-5">
+                <img src="images/tasks.png" alt="monitor">
+            </div>
+            <div class="text-center py-3">
+                <h1 class="text-center text-white text-3xl font-bold">36</h1>
+                <p class="text-white font-medium">Delivered Projects</p>
+            </div>
+
+          </div>
+          <div class="mx-auto h-full justify-around p-4">
+
+            <div class="justify-around px-10 pt-5">
+                <img src="images/trophy.png" alt="monitor">
+            </div>
+            <div class="text-center py-3">
+                <h1 class="text-center text-white text-3xl font-bold">5</h1>
+                <p class="text-white font-medium">Awards won</p>
+            </div>
+
+          </div>
+          <div class="mx-auto h-full justify-around p-4">
+
+            <div class="justify-around px-10 pt-5">
+                <img src="images/coffee_cup.png" alt="monitor">
+            </div>
+            <div class="text-center py-3">
+                <h1 class="text-center text-white text-3xl font-bold">132</h1>
+                <p class="text-white font-medium">Cups of Coffee</p>
+            </div>
+          </div>
+        </div>
+      </main>
+  </section>
+
+  <section id="contact">
+    <main>
+        <div class="flex">
+            <div class="w-1/2 p-20 items-center">
+                <h2 class="font-bold text-3xl text-deepBlue py-6">Contact Me</h2>
+                <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit accusamus
+                    harum
+                    possimus. Dolorem aspernatur repellat, similique at porro iste id voluptatibus assumenda dolorum
+                    ducimus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum sequi vel fuga
+                    distinctio
+                    blanditiis omnis ea a eligendi animi.</p>
+                    
+                <p class="text-gray pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit accusamus
+                    harum
+                    possimus. Dolorem aspernatur repellat, similique at porro iste id voluptatibus assumenda dolorum
+                    ducimus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum sequi vel fuga
+                    distinctio
+                    blanditiis omnis ea a eligendi animi.</p>
+            </div>
+
+            <div class="w-1/2 p-20">
+              <form action="send" id="contact-form" method="POST" enctype="multipart/form-data">
+            
+                <label for="fname" class="block font-medium text-gray-700 mb-2">Hi, there what's your name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Please enter your name" required
+                       class="w-3/5 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-primary-200 focus:border-primary-500">
+            
+                <label for="email" class="block font-medium text-gray-700 mb-2 mt-4">And your email too</label>
+                <input type="text" id="email" name="email" placeholder="Please your email address" required
+                       class="w-4/6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-primary-200 focus:border-primary-500">
+            
+                <label for="subject" class="block font-medium text-gray-700 mb-2 mt-4">What can I help you with?</label>
+                <input type="text" id="subject" name="subject" placeholder="A short description your request" required
+                       class="w-5/6 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-primary-200 focus:border-primary-500">
+            
+                <label for="requestDetail" class="block font-medium text-gray-700 mb-2 mt-4">Tell me more about it:</label>
+                <textarea id="requestDetail" name="requestDetail" placeholder="Talk more about it.." required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-primary-200 focus:border-primary-500 resize-vertical h-40"></textarea>
+            
+                <input type="submit" value="Submit" class="bg-deepBlue text-white px-10 py-3 rounded-full mt-8 cursor-pointer hover:bg-gray">
+              </form>
+            </div>  
+        </div>
+    </main>
+</section>
+
+<section class="bg-deepBlue p-10">
+  <main>
+      <div class="flex justify-between">
+          <div class="p-5 ">
+              <h2 class="text-3xl font-bold text-white">DITA Aria</h2>
+              <div id="soc_details">
+                  <p class="text-white py-1">Full Stack Developer, Graphics Designer and Animator</p>
+                  <p class="text-white py-1">llytaaddy@mail.com</p>
+                  <p class="text-white py-1">+1-000-0000-0000</p>
+                  <p class="text-white py-1">&copy; <span class="year">2020</span> lyta adrian. All Rights Reserved.</p>
+              </div>
+          </div>
+
+          <div class="flex py-10 m-auto">
+              <div class="p-6">
+                  <img src="images/twitter.png" alt="Twitter" class="social_platform" height="25px" width="25px">
+              </div>
+              <div class="p-6">
+                  <img src="images/fb_social.png" alt="Facebook" class="social_platform" height="25px"
+                      width="25px">
+              </div>
+              <div class="p-6">
+                  <img src="images/web_social.png" alt="Web Social" class="social_platform" height="25px"
+                      width="25px">
+              </div>
+              <div class="p-6">
+                  <img src="images/linkedin.png" alt="Linkedin" class="social_platform" height="25px"
+                      width="25px">
+              </div>
+              <div class="p-6">
+                  <img src="images/github.png" alt="Github" class="social_platform" height="25px" width="25px">
+              </div>
+              <div class="p-6">
+                  <img src="images/mail.png" alt="Mail" class="social_platform" height="25px" width="25px">
+              </div>
+          </div>
+      </div>
+  </main>
+ </section>
+ <script 
+ 
+    src="custom.js">
+    
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.fade-in').forEach(function(element) {
+        element.classList.add('transition-opacity');
+      });
+    });
+
+ </script>
+
+</body>
+</html>
